@@ -4,11 +4,11 @@ on: push
 
 jobs:
  nose:
-  runs-on: linux-latest
+  runs-on: ubuntu-latest
   permissions:
    security-events: write
 
-  steps: 
+  steps:
    - name: accion
      uses: advanced-security/python-lint-code-scanning-action@v1
      with:
